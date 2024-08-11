@@ -6,7 +6,7 @@ func main() {
 	// slice derived from array
 	// slice size can be changed
 	// slice and array is connected
-	// slize can access some or whole array data
+	// slice can access some or whole array data
 
 	// slice has 3 data: pointer, length, capacity
 	// pointer: pointer first array data on slice
@@ -25,8 +25,11 @@ func main() {
 	// IF array has length of 12
 	// slice = array[4:7] | pointer = 4 | length = slice max index (7) -  slice min index (4) = 3 | capacity = array size (12) - slice pointer (4) = 8
 
-	names := [...]string{"Nurul", "Fikri", "Agus", "Joko", "Budi"}
-	slice1 := names[3:]
+	// if create array has 3 dots [...]
+	// if create slice dont need dots []
+
+	arrayNames := [...]string{"Nurul", "Fikri", "Agus", "Joko", "Budi"}
+	slice1 := arrayNames[3:]
 	// pointer = 3
 	// length = 5 - 3 = 2
 	fmt.Println("Length of slice1: ", len(slice1))
@@ -34,7 +37,7 @@ func main() {
 	fmt.Println("Capacity of slice1: ", cap(slice1))
 	fmt.Println(slice1)
 
-	slice2 := names[0:4]
+	slice2 := arrayNames[0:4]
 	// pointer = 0
 	// length = 4 - 0 = 4
 	fmt.Println("Length of slice2: ", len(slice2))
