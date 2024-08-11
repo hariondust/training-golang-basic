@@ -25,7 +25,7 @@ func main() {
 
 	// if array size not assigned value, it will use default
 	var integer = [3]int{06, 24}
-	// array 2 will contain 0 as default value
+	// array index 2 will contain 0 as default value
 	fmt.Println(integer[2])
 
 }
